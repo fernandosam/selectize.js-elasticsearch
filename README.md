@@ -7,7 +7,6 @@ The first step is download and install [elasticsearch](https://github.com/elasti
 
 - [Download](https://www.elastic.co/downloads/elasticsearch) and unzip the Elasticsearch official distribution.
 - Run bin/elasticsearch on unix, or bin\elasticsearch.bat on windows.
-- Run curl -X GET http://localhost:9200/.
 
 ## http-server
 
@@ -25,7 +24,7 @@ Download or clone this project and open the project folder:
 cd Selectize.js-elasticsearch/
 ```
 
-Run http-server:
+Run http-server inside project folder:
 ```
 http-server -o -cors -c-1 -i
 ```
