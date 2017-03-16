@@ -36,4 +36,4 @@ Run http-server inside project folder:
 http-server -o -cors -c-1 -i
 ```
 
-Now you can visit http://localhost:8080 to view your server and view Selectize.js-elasticsearch in action.
+Now you can visit http://localhost:8080 to view Selectize.js-elasticsearch in action.
