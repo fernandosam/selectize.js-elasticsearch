@@ -19,7 +19,7 @@ define(["elasticsearch", "jquery", "selectize"], function(elasticsearch, $, sele
             array.push(element);
         }
 
-        console.log(array);
+        //console.log(array);
         return array;
     }
 
@@ -209,12 +209,16 @@ define(["elasticsearch", "jquery", "selectize"], function(elasticsearch, $, sele
         );
     }
 
-
     function loadSelects(){
-        $("select").each(function(index) {
+        $("select[id^='list'],select[id^='select']").each(function(index) {
+            //console.log( index + ": " + $( this ).text() );
             loadSelect($(this).attr('id'));
         });
     }
+  
+    $.fn.LoadSelects = function() {
+        loadSelects();
+    };
 
     return {
         loadSelects: loadSelects
