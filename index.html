@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Elasticsearch Example</title>
+    <title>Selectize.js-elasticsearch example</title>
     <script data-main="app" src="lib/require.js"></script>
 </head>
 
@@ -71,20 +71,13 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.default.min.css">
 
     <form>
-        <div class="form-group">
-            <label for="encarregado" class="control-label col-md-4">Encarregado</label>
+         <div class="form-group">
+            <label for="pessoa" class="control-label col-md-4">Name and Pattern:</label>
             <div class="col-md-8">
                 <div class="control-group">
-                    <select id="lista-encarregados" class="usuarios" placeholder="Informe o Encarregado..."></select>
+                    <select id="list-names" class="usuarios" placeholder="Type Name and Pattern..."></select>
                 </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="indiciado" class="control-label col-md-4">Indiciado</label>
-            <div class="col-md-8">
-                <div class="control-group">
-                    <select id="lista-indiciados" class="usuarios" placeholder="Informe o Indiciado..."></select>
-                </div>
+                <div class="help">Ex: Fernando <111.000.333-00>, Jorge <222.111.212-45>, Maria <123.000.151-11> </div>
             </div>
         </div>
     </form>
