@@ -3,10 +3,17 @@ Use selectize.js with elasticsearch
 
 ## Elasticsearch Installation
 
-The first step is download and install [elasticsearch](https://github.com/elastic/elasticsearch).
+The first step is download and install [elasticsearch](https://github.com/elastic/elasticsearch):
 
 - [Download](https://www.elastic.co/downloads/elasticsearch) and unzip the Elasticsearch official distribution.
 - Run bin/elasticsearch on unix, or bin\elasticsearch.bat on windows.
+
+Set your config file (config/elasticsearch.yml) as follows:
+
+```
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+```
 
 ## http-server
 
