@@ -22,7 +22,7 @@ npm install http-server -g
 
 Download or clone this project and open the project folder:
 ```
-cd <project_folder>
+cd Selectize.js-elasticsearch/
 ```
 
 Run http-server:
