@@ -1,4 +1,4 @@
-# Selectize.js-elasticsearch
+# selectize.js-elasticsearch
 Use selectize.js with elasticsearch
 
 ## Elasticsearch Installation
