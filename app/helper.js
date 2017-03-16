@@ -162,6 +162,7 @@ define(["elasticsearch", "jquery", "selectize"], function(elasticsearch, $, sele
 
                 // name <000.000.000-00>
                 regex = new RegExp('^([^<]*)\<' + REGEX_CPF + '\>$', 'i');
+
                 match = input.match(regex);
                 if (match) {
                     return !this.options.hasOwnProperty(match[2]);
@@ -180,8 +181,8 @@ define(["elasticsearch", "jquery", "selectize"], function(elasticsearch, $, sele
                     addPessoa(pessoa, typeName);
 
                     return {
-                        cpf: match[2],
-                        name: $.trim(match[1])
+                        name: $.trim(match[1]),
+                        cpf: match[2]
                     };
                 }
                 return false;
@@ -191,7 +192,8 @@ define(["elasticsearch", "jquery", "selectize"], function(elasticsearch, $, sele
     }
 
     function loadSelect(idElement) {
-        var res = idElement.split("-");
+        var res = [];
+        if (idElement) res = idElement.split("-");
         var typeName = res[1];
 
         searchType(typeName).then(
